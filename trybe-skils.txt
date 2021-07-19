@@ -6,6 +6,10 @@ O que eu vou aprender na trybe:
 
  - Git
 
+ - JavaScript
+
+ - Node.JS
+
  - HTML
 
  - CSS
