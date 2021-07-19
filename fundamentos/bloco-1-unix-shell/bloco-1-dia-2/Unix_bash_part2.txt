@@ -1,0 +1,3 @@
+    No segundo dia, aprendemos sobre permisões, inputs e outputs, processos e jobs. Realizamos
+exercícios como: criaçãos de processos, visualização dos mesmos, inputs e outputs recebidos e 
+enviados e utilização vasta dos comandos aprendidos no dia anterior.
