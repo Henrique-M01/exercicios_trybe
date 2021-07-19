@@ -9,3 +9,7 @@ O que eu vou aprender na trybe:
  - JavaScript
 
  - Node.JS
+
+ - HTML
+
+ - CSS
