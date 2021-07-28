@@ -1,8 +1,8 @@
-let a = 43;
-let b = 31;
-let c = 5;
+let a = 44;
+let b = 32;
+let c = 6;
 
-if ((a % 2) === 0 || (b % 2) === 0 || (c % 2) === 0){
+if ((a % 2) === 1 || (b % 2) === 1 || (c % 2) === 1){
     console.log("True")
 }
 else {
