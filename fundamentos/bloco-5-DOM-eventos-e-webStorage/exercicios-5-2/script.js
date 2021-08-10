@@ -34,7 +34,7 @@ image.src = "https://picsum.photos/200";
 leftSquare.appendChild(image);
 
 let list = document.createElement("ul");
-leftSquare.appendChild(list);
+rightSquare.appendChild(list);
 let listItem = [
   "um",
   "dois",
@@ -61,3 +61,4 @@ for (let index = 0; index < 3; index += 1) {
 }
 main.removeChild(leftSquare);
 rightSquare.style.marginRight = "auto";
+main.style.backgroundColor = "green";
