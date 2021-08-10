@@ -2,6 +2,7 @@ let body = document.body;
 
 let h1 = document.createElement("h1");
 h1.innerText = "Exercício 5.2 - JavaScript DOM";
+h1.className = "title";
 
 body.appendChild(h1);
 
@@ -51,4 +52,10 @@ for (let index = 0; index < 10; index += 1) {
   createList.innerHTML = listItem[index];
   list.appendChild(createList);
 }
-console.log(listItem);
+
+for (let index = 0; index < 3; index += 1) {
+  let createH3 = document.createElement("h3");
+  createH3.className = "description";
+  createH3.innerText = "Hello World!!";
+  main.appendChild(createH3);
+}
