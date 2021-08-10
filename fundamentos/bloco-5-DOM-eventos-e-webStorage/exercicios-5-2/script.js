@@ -59,3 +59,5 @@ for (let index = 0; index < 3; index += 1) {
   createH3.innerText = "Hello World!!";
   main.appendChild(createH3);
 }
+main.removeChild(leftSquare);
+rightSquare.style.marginRight = "auto";
