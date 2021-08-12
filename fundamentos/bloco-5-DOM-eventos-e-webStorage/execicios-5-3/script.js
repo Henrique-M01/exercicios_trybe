@@ -63,23 +63,32 @@ function createButtonHoliday(string) {
 }
 createButtonHoliday("Feriados");
 
-// let buttonHoliday = document.getElementById("btn-holiday");
-// buttonHoliday.addEventListener("click", changeBackGroundColor);
+let buttonHoliday = document.getElementById("btn-holiday");
+buttonHoliday.addEventListener("click", changeBackGroundColor);
 
-// function changeBackGroundColor() {
-//   let holiday = document.querySelectorAll(".holiday")[0].ba;
-//   console.log(holiday);
-//   for (let key of holiday){
-
-//   }
-// }
+function changeBackGroundColor() {
+  let holiday = document.querySelectorAll(".holiday");
+  for (let key of holiday) {
+    key.classList.toggle("color");
+  }
+}
 
 function createButtonFriday(string) {
   let buttonFriday = document.createElement("button");
-  buttonFriday.id = "btn-holiday";
+  buttonFriday.id = "btn-friday";
   buttonFriday.innerText = string;
   let divPaiButton = document.getElementsByClassName("buttons-container")[0];
   divPaiButton.appendChild(buttonFriday);
   buttonFriday.style.backgroundColor = "red";
 }
 createButtonFriday("Sexta-Feira");
+
+let friday = document.getElementById("btn-friday");
+friday.addEventListener("click", addNewText);
+
+function addNewText() {
+  console.log("Ola");
+  let daysFriday = document.querySelectorAll(".friday");
+  for (let key of daysFriday) {
+  }
+}
