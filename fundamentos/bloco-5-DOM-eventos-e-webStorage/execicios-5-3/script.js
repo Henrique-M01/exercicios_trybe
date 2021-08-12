@@ -59,5 +59,27 @@ function createButtonHoliday(string) {
   button.innerText = string;
   let divPaiButton = document.getElementsByClassName("buttons-container")[0];
   divPaiButton.appendChild(button);
+  button.style.backgroundColor = "blue";
 }
 createButtonHoliday("Feriados");
+
+// let buttonHoliday = document.getElementById("btn-holiday");
+// buttonHoliday.addEventListener("click", changeBackGroundColor);
+
+// function changeBackGroundColor() {
+//   let holiday = document.querySelectorAll(".holiday")[0].ba;
+//   console.log(holiday);
+//   for (let key of holiday){
+
+//   }
+// }
+
+function createButtonFriday(string) {
+  let buttonFriday = document.createElement("button");
+  buttonFriday.id = "btn-holiday";
+  buttonFriday.innerText = string;
+  let divPaiButton = document.getElementsByClassName("buttons-container")[0];
+  divPaiButton.appendChild(buttonFriday);
+  buttonFriday.style.backgroundColor = "red";
+}
+createButtonFriday("Sexta-Feira");
