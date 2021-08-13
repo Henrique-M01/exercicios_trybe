@@ -104,10 +104,14 @@ window.onload = createEvent();
 function createEvent() {
   for (let key of classDay) {
     key.addEventListener("mouseover", zoomElement);
-    console.log("Ola, estou aqui");
+    key.addEventListener("mouseout", desZoomElement);
   }
+}
+function desZoomElement(event) {
+  let mouse = event.target;
+  mouse.style.fontSize = "20px";
 }
 function zoomElement(event) {
   let mouse = event.target;
-  console.log(mouse);
+  mouse.style.fontSize = "30px";
 }
