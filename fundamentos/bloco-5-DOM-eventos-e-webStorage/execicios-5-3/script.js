@@ -90,5 +90,24 @@ function addNewText() {
   console.log("Ola");
   let daysFriday = document.querySelectorAll(".friday");
   for (let key of daysFriday) {
+    key.classList.toggle("newText");
+    let newText = document.getElementsByClassName("newText");
+    for (let index of newText) {
+      index.innerText = "SEXTOOUU";
+    }
   }
+}
+
+let classDay = document.getElementsByClassName("day");
+console.log(classDay);
+window.onload = createEvent();
+function createEvent() {
+  for (let key of classDay) {
+    key.addEventListener("mouseover", zoomElement);
+    console.log("Ola, estou aqui");
+  }
+}
+function zoomElement(event) {
+  let mouse = event.target;
+  console.log(mouse);
 }

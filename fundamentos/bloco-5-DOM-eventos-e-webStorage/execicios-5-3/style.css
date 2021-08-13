@@ -156,3 +156,12 @@ label {
 .color {
   background-color: aquamarine;
 }
+
+.newText {
+  background-color: red;
+}
+
+.mouse {
+  font-size: 35px;
+  transition-delay: 0.4s;
+}
