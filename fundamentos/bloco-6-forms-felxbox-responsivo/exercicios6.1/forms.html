@@ -8,11 +8,81 @@
   </head>
   <body>
     <fieldset>
-      <form action="">
-        <label for=""
-          >Nome: <input type="text" name="name" maxlength="40" required
+      <form action="" method="GET">
+        <label for="input-name"
+          >Nome:
+          <input
+            type="text"
+            name="name"
+            maxlength="40"
+            placeholder="Digite seu nome completo"
+            id="input-name"
+            required
         /></label>
+        <br />
+        <label for="input-e-mail"
+          >E-mail:
+          <input
+            type="e-mail"
+            maxlength="50"
+            placeholder="Digite seu e-mail"
+            id="input-e-mail"
+            required
+        /></label>
+        <br />
+        <label for="input-cpf"
+          >CPF:
+          <input
+            type="text"
+            name="cpf"
+            id="input-cpf"
+            maxlength="11"
+            placeholder="000.000.000-00"
+            required
+        /></label>
+        <br />
+        <label for="input-endereco"
+          >Endereço:
+          <input
+            type="text"
+            placeholder="Digite seu endereço"
+            id="input-endereco"
+            maxlength="200"
+            required
+            name="endereço"
+          />
+        </label>
+        <br />
+        <label for="input-cidade"
+          >Cidade:
+          <input
+            type="text"
+            maxlength="28"
+            id="input-cidade"
+            placeholder="Digite o nome da sua cidade"
+            required
+            name="cidade"
+        /></label>
+        <br />
+        <label for="selected-estado"
+          >Estado
+          <select name="estado" id="selected-estado" required></select
+        ></label>
+        <br />
+        <label for="input-ap"
+          >Tipo: <input type="radio" name="casa" id="input-ap" />Apartamento
+          <br />
+        </label>
+        <label for="input-casa"
+          ><input
+            type="radio"
+            name="casa"
+            id="input-casa"
+            required
+          />Casa</label
+        >
       </form>
     </fieldset>
   </body>
+  <script src="script.js"></script>
 </html>
