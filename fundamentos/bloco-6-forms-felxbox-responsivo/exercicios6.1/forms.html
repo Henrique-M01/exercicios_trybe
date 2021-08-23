@@ -4,15 +4,169 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css" />
+    <link href="style.css" />
+    <link href="validation.min.css" rel="stylesheet" />
+    <script src="validation.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
     <title>Formulário Curriculo</title>
   </head>
-  <body>
-    <fieldset>
-      <form action="">
-        <label for=""
-          >Nome: <input type="text" name="name" maxlength="40" required
-        /></label>
+  <body class="container-fluid">
+    <div>
+      <h2 class="lead">Seus dados:</h2>
+    </div>
+    <div>
+      <form action="" method="GET">
+        <div>
+          <label class="form-label" for="input-name"
+            >Nome:
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              maxlength="40"
+              placeholder="Digite seu nome completo"
+              id="input-name"
+              data-validate="required, name"
+          /></label>
+        </div>
+        <div>
+          <label class="form-label" for="input-e-mail"
+            >E-mail:
+            <input
+              class="form-control"
+              type="e-mail"
+              maxlength="50"
+              placeholder="Digite seu e-mail"
+              id="input-e-mail"
+              required
+          /></label>
+        </div>
+        <div>
+          <label class="form-label" for="input-cpf"
+            >CPF:
+            <input
+              class="form-control"
+              type="text"
+              name="cpf"
+              id="input-cpf"
+              maxlength="11"
+              placeholder="000.000.000-00"
+              required
+          /></label>
+        </div>
+        <div>
+          <label class="form-label" for="input-endereco"
+            >Endereço:
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Digite seu endereço"
+              id="input-endereco"
+              maxlength="200"
+              required
+              name="endereço"
+            />
+          </label>
+        </div>
+        <div>
+          <label class="form-label" for="input-cidade"
+            >Cidade:
+            <input
+              class="form-control"
+              type="text"
+              maxlength="28"
+              id="input-cidade"
+              placeholder="Digite o nome da sua cidade"
+              required
+              name="cidade"
+          /></label>
+        </div>
+        <div>
+          <label class="form-label" for="selected-estado"
+            >Estado
+            <select
+              class="form-select"
+              name="estado"
+              id="selected-estado"
+              required
+            ></select
+          ></label>
+        </div>
+        <div>
+          <label class="form-check-label" for="input-ap"
+            >Tipo:
+            <input
+              class="form-check-input"
+              type="radio"
+              name="casa"
+              id="input-ap"
+            />Apartamento
+          </label>
+          <label class="form-check-label" for="input-casa"
+            ><input
+              class="form-check-input"
+              type="radio"
+              name="casa"
+              id="input-casa"
+              required
+            />Casa
+          </label>
+        </div>
+        <div>
+          <h3 class="display-4">Dados do seu ultimo emprego:</h3>
+        </div>
+        <div>
+          <label class="form-label" for="resumo"
+            >Quem é você? <br />
+            <textarea
+              name="resumo-curriculo"
+              id="resumo"
+              cols="30"
+              rows="6"
+              maxlength="1000"
+              placeholder="Digite aqui, um resumo do seu currículo"
+              required
+            ></textarea>
+          </label>
+        </div>
+        <div>
+          <label class="form-label" for=""
+            >Cargo:
+            <input
+              class="form-control"
+              type="text"
+              name="cargo"
+              id="input-cargo"
+              maxlength="40"
+              required
+          /></label>
+        </div>
+        <div>
+          <label class="form-label" for="input-descricao-cargo"
+            >Descrição do cargo:
+            <input
+              class="form-control"
+              type="text"
+              maxlength="500"
+              required
+              id="input-descricao-cargo"
+              placeholder="Digite aqui, uma breve descrição do seu cargo"
+          /></label>
+        </div>
+        <div>
+          <label class="form-label" for=""
+            >Data de início: <input class="form-control" type="date" required
+          /></label>
+        </div>
+        <div>
+          <button class="btn btn-success" id="button-submit" type="submit">
+            Enviar dados
+          </button>
+        </div>
       </form>
-    </fieldset>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
