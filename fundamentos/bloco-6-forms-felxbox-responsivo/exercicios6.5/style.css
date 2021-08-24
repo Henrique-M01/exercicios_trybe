@@ -1,0 +1,33 @@
+body {
+}
+h1 {
+}
+h2 {
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+@media only screen and (min-width: 650px) {
+  p {
+    font-size: 27px;
+  }
+
+  h1 {
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  figure {
+    padding: 60px;
+  }
+
+  body {
+    margin: 70px;
+  }
+}
