@@ -44,5 +44,40 @@ figure {
 
   body {
     margin: 70px;
+    background-color: darkkhaki;
   }
 }
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+  p {
+    font-size: 37px;
+  }
+
+  h1 {
+    font-size: xxx-large;
+  }
+
+  h2 {
+    font-size: xx-large;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 35%;
+    height: 40%;
+  }
+
+  image {
+    width: 40%;
+    object-fit: cover;
+  }
+
+  body {
+    margin: 110px;
+    background-color: darkgoldenrod;
+  }
+}
+
+@media only screen (min-width: 1300px);
