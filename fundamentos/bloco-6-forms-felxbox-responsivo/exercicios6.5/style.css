@@ -1,8 +1,17 @@
 body {
+  margin: 20px;
 }
 h1 {
+  font-size: x-large;
+  text-align: center;
 }
 h2 {
+  font-size: large;
+  text-align: center;
+}
+
+p {
+  font-size: 17px;
 }
 
 img {
@@ -11,9 +20,10 @@ img {
 
 figure {
   margin: 0;
+  padding: 30px;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 650px) and (max-width: 900px) {
   p {
     font-size: 27px;
   }
@@ -23,8 +33,13 @@ figure {
     text-align: center;
   }
 
+  h2 {
+    font-size: x-large;
+  }
+
   figure {
-    padding: 60px;
+    padding: 40px;
+    text-align: center;
   }
 
   body {
