@@ -80,4 +80,37 @@ figure {
   }
 }
 
-@media only screen (min-width: 1300px);
+@media only screen and (min-width: 1300px) {
+  body {
+    background-color: red;
+    margin: 100px;
+  }
+
+  p {
+    font-size: 45px;
+    max-width: 1600px;
+    text-align: justify;
+  }
+
+  h1 {
+    font-size: xxx-large;
+  }
+
+  h2 {
+    font-size: xx-large;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 35%;
+    justify-content: center;
+    height: 40%;
+  }
+
+  image {
+    width: 40%;
+    object-fit: cover;
+  }
+}
