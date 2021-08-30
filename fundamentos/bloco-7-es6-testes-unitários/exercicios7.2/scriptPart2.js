@@ -23,3 +23,6 @@ addMorningLesson2(lesson2, 'turno', 'manhã');
 
 const listKeys = obj => Object.keys(obj);
 console.log(listKeys(lesson3))
+
+const lengthObj = obj => Object.keys(obj).length;
+console.log(lengthObj(lesson3))
