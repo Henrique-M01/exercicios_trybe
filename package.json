@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "moment": "^2.29.1",
+    "popup": "^0.0.3",
+    "popup-validation": "^3.0.3"
+  }
+}
