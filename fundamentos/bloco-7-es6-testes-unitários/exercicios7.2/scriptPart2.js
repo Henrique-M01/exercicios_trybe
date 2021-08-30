@@ -20,4 +20,6 @@ const lesson1 = {
 let addMorningLesson2 = 
 (obj, keyAdd, keyValue) => obj[keyAdd] = keyValue; 
 addMorningLesson2(lesson2, 'turno', 'manhã');
-console.log(lesson2)
+
+const listKeys = obj => Object.keys(obj);
+console.log(listKeys(lesson3))
