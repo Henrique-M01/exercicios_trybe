@@ -3,5 +3,26 @@
     "moment": "^2.29.1",
     "popup": "^0.0.3",
     "popup-validation": "^3.0.3"
-  }
+  },
+  "name": "trybe_exercicios",
+  "description": "Este repositório contém todas as atividades de aprendizagem desenvolvidas por Henrique Martins enquanto estudante da Trybe.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^27.2.1"
+  },
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henrique-M01/exerc-cios-trybe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henrique-M01/exerc-cios-trybe/issues"
+  },
+  "homepage": "https://github.com/Henrique-M01/exerc-cios-trybe#readme"
 }
