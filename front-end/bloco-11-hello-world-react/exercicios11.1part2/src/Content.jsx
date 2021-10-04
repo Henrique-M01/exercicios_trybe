@@ -26,7 +26,7 @@ const conteudos = [
 class Content extends React.Component {
     render() {
       return conteudos.map((event) => {
-        return <div>
+        return <div className='card-item'>
           <p>O conteúdo é: {event.conteudo}</p>
           <p>Status: {event.status}</p>
           <p>Bloco: {event.bloco}</p>
