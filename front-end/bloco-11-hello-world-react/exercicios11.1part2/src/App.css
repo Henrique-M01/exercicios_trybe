@@ -1,0 +1,16 @@
+.card-item {
+  background-color: aquamarine;
+  border-radius: 20px;
+  color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+#root {
+  display: flex;
+  flex-flow: row wrap;
+}
