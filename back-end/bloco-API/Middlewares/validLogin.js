@@ -10,8 +10,7 @@ async function validLogin(req, res) {
       password.length >= MIN_NUMBER_PASSWORD &&
       password.length <= MAX_NUMBER_PASSWORD) {
     const objJson = { userName, email, password}
-    console.log(objJson);
-    await fs.writeFile('../users.json', JSON.stringify(objJson))
+    await fs.writeFile('users.txt', JSON.stringify(objJson))
     return res.status(200).send({ "message": "user created" });
   }
   return res.status(400).send({ "message": "invalid data"});

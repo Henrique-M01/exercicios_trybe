@@ -3,7 +3,6 @@ const axios = require('axios');
 async function validToken(req, res) {
   const MAX_LENGTH_TOKEN = 12;
   const { authorization } = req.headers;
-  console.log(authorization)
   if ( authorization.length === MAX_LENGTH_TOKEN) {
       const data = await axios.get('https://api.coindesk.com/v1/bpi/currentprice/BTC.json');
       return res.status(200).send(data.data.bpi);
