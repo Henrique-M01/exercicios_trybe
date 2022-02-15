@@ -14,7 +14,7 @@ async function validLogin(req, res) {
     await fs.writeFile('../users.json', JSON.stringify(objJson))
     return res.status(200).send({ "message": "user created" });
   }
-  return res.status(400).send({ message: "invalid data"});
+  return res.status(400).send({ "message": "invalid data"});
 
 };
 
